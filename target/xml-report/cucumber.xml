@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="55.29">
+<testcase classname="US1000 Google search test" name="TC01 verify iphone search" time="20.142">
+<failure message="" type="java.lang.AssertionError"><![CDATA[Given user is on google page................................................passed
+And user search for iphone..................................................passed
+Then verify the result has iphone...........................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at stepdefinitions.GoogleSearchStepDefinitions.verify_the_result_has_iphone(GoogleSearchStepDefinitions.java:27)
+	at ✽.verify the result has iphone(file:///C:/Users/UXU/IdeaProjects/mycucumberreview/src/test/resources/features/googlesearch.feature:6)
+]]></failure>
+</testcase>
+<testcase classname="US1000 Google search test" name="TC02 verify tea pot search" time="20.296">
+<system-out><![CDATA[Given user is on google page................................................passed
+And user searchs for tea pot................................................passed
+Then verify the result has tea pot..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1000 Google search test" name="TC03 verfiy flower search" time="13.886">
+<failure message="" type="java.lang.AssertionError"><![CDATA[Given user is on google page................................................passed
+And user search for flower..................................................passed
+Then verify the result has flower...........................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.GoogleSearchStepDefinitions.verify_the_result_has_flower(GoogleSearchStepDefinitions.java:45)
+	at ✽.verify the result has flower(file:///C:/Users/UXU/IdeaProjects/mycucumberreview/src/test/resources/features/googlesearch.feature:16)
+]]></failure>
+</testcase>
+</testsuite>
